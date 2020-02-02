@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:ticket_booking/home.dart';
 import 'package:ticket_booking/theme/AppDecoration.dart';
 import 'package:ticket_booking/theme/TextLabel.dart';
 
@@ -17,7 +17,8 @@ class _SignPageState extends State<SignInPage> {
       width: double.infinity,
       child: Padding(
         padding: const EdgeInsets.all(25),
-        child: ListView(shrinkWrap: true,
+        child: ListView(
+          shrinkWrap: true,
           children: <Widget>[
             Text(
               'Username',
@@ -50,7 +51,11 @@ class _SignPageState extends State<SignInPage> {
             Container(
               width: double.infinity,
               child: RaisedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                      (route) => false);
+                },
                 child: Text('Sign in'),
               ),
             )

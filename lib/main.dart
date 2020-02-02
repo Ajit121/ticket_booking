@@ -22,18 +22,22 @@ class MyApp extends StatelessWidget {
           ),
         ),
         inputDecorationTheme: InputDecorationTheme(
-            contentPadding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
-            enabledBorder:
-                OutlineInputBorder(borderSide: BorderSide(color: Colors.black,width: 0.5),borderRadius: BorderRadius.circular(10),),
-            focusColor: accentColor,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(color: Colors.black,width: 0.5),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(color: accentColor,width: 0.5),
-            )),
+          contentPadding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.black, width: 0.5),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          focusColor: accentColor,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide(color: Colors.black, width: 0.5),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide(color: accentColor, width: 0.5),
+          ),
+        ),
+        bottomAppBarTheme: BottomAppBarTheme(color: backgroundColor,),
         primarySwatch: Colors.red,
       ),
       home: SplashPage(),
